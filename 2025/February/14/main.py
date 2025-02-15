@@ -9,21 +9,17 @@ flag = 'ictf{REDACTED}'
 email = input('Email: ')
 
 if validate1(email) == ('', ''):
-    print("bad")
-    exit()
+    print("bad1")
 
 try:
     validate2(email, check_deliverability=False) 
 except Exception as e:
-    print("bad")
-    exit()
+    print("bad2")
 
 if not validate3(email):
-    print("bad")
-    exit()
+    print("bad3")
 
 if not validate4(email):
-    print("bad")
-    exit()
+    print("bad4")
 
 exec(email)
