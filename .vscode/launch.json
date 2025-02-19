@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/danielroffey/Documents/GitHub/imaginary-ctf/2025/February/13",
+      "program": "/Users/danielroffey/Documents/GitHub/imaginary-ctf/2025/February/13/build/Debug/outDebug"
+    }
+  ]
+}
