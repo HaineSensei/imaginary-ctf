@@ -4,6 +4,7 @@ from string import printable
 
 flag = b'ictf{REDACTED}'
 password = (''.join(choice(printable) for _ in range(4))).encode('utf-8')
+print(password)
 #super-secure-hash :)
 def ssh(ct):
     hasher = MD4.new()
