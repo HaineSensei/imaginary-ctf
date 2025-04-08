@@ -21,10 +21,14 @@ def main():
         for initial in range(16):
             a = initial
             encoded = eval(expr_1) & 127
+            #debug
+            print(f"{a =:0b}, {encoded =:0b}")
             
             for error in range(8):
                 a = (encoded ^ (1 << error)) & 127
                 decoded = eval(expr_2)
+                #debug
+                print(f"{a =:0b}, {decoded =:0b}")
                 if (decoded != initial):
                     print("thats not correct")
                     exit(1)
